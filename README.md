@@ -6,6 +6,7 @@ This repository includes the core routed review skills plus a small debugging bu
 - `pua-debugging`: pushes for exhaustive investigation and stronger end-to-end ownership when work gets stuck.
 - `verification-before-completion`: requires fresh verification evidence before claiming a task is fixed or complete.
 - `systematic-debugging`: enforces root-cause investigation before proposing fixes, with additional supporting reference files.
+- `python-uv-workflow`: standardizes `uv`-based Python project work around `uv`, `ruff`, and `ty`.
 
 ## 1. Global setup
 Copy `AGENTS.md` into `~/.codex/AGENTS.md`.

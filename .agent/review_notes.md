@@ -9,10 +9,11 @@ Open critical issues:
 - None recorded in the current working tree.
 
 Should fix:
-- Re-run a full review if more third-party skills are imported.
+- Re-run a focused review if the Python skill grows migration steps beyond `uv`, `ruff`, and `ty`.
 
 Follow-up:
 - Keep root repository scaffolding and `repo-template/.agent/` aligned when instructions change.
+- Re-run a full review whenever new globally installed workflow skills are added.
 
 Notes:
 - This file is acting as the repository-level review ledger referenced by `AGENT.md`.

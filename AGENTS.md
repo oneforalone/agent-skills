@@ -31,7 +31,7 @@ Reviewer priorities:
 ## Repository Context
 
 Before working in a repository:
-1. Read `AGENT.md` in the repository root if present.
+1. Read `AGENTS.md` in the repository root if present.
 2. Read `.agent/` state files if present.
 3. Treat repository instructions as higher priority than global defaults.
 

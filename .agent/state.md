@@ -13,3 +13,5 @@
   - Fixed review findings by making `pua-debugging` opt-in, restoring root `.agent/` scaffolding, and sanitizing imported skill references.
   - Added `skills/python-uv-workflow/` for Python projects that standardize on `uv`, `ruff`, and `ty`.
   - Narrowed `python-uv-workflow` so it only applies to uv-based repos or explicit uv standardization requests.
+  - Replaced repository-local `AGENT.md` usage with `AGENTS.md` so downstream projects auto-load the copied instructions.
+  - Split global and repository-local `AGENTS.md` responsibilities so the root file stays global-only and `repo-template/AGENTS.md` remains the downstream repo template.

@@ -9,7 +9,7 @@ This repository includes the core routed review skills plus a small debugging bu
 - `python-uv-workflow`: standardizes `uv`-based Python project work around `uv`, `ruff`, and `ty`.
 
 ## 1. Global setup
-Copy `AGENTS.md` into `~/.codex/AGENTS.md`.
+Copy the repository-root `AGENTS.md` into `~/.codex/AGENTS.md`.
 
 Install the default skill set from `skills/` into `~/.codex/skills/`, but keep `pua-debugging` opt-in because it intentionally changes tone and trigger behavior.
 
@@ -24,8 +24,12 @@ cp -R skills/pua-debugging ~/.codex/skills/
 ```
 
 ## 2. Repository setup
-Copy `repo-template/AGENT.md` into your repository root as `AGENT.md`.
+Copy `repo-template/AGENTS.md` into your repository root as `AGENTS.md`.
 Copy `repo-template/.agent/` into your repository root.
+
+The split is intentional:
+- repository-root `AGENTS.md` is the global Codex policy
+- `repo-template/AGENTS.md` is the repository-local template for downstream projects
 
 ## 3. Verify
 Run:

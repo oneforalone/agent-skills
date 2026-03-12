@@ -4,7 +4,7 @@ Reference example of extracting, structuring, and bulletproofing a critical skil
 
 ## Source Material
 
-Extracted debugging framework from `/Users/jesse/.claude/CLAUDE.md`:
+Extracted debugging framework from an upstream `CLAUDE.md` debugging guide:
 - 4-phase systematic process (Investigation → Pattern Analysis → Hypothesis → Implementation)
 - Core mandate: ALWAYS find root cause, NEVER fix symptoms
 - Rules designed to resist time pressure and rationalization
@@ -82,7 +82,7 @@ Created 4 validation tests following skills/meta/testing-skills-with-subagents:
 - Flowchart for "fix failed" decision
 
 ### Enhancement 1: TDD Reference
-- Added link to skills/testing/test-driven-development
+- Added a note about how this skill relates to separate TDD workflows
 - Note explaining TDD's "simplest code" ≠ debugging's "root cause"
 - Prevents confusion between methodologies
 
@@ -104,7 +104,7 @@ Bulletproof skill that:
 ## Usage Example
 
 When encountering a bug:
-1. Load skill: skills/debugging/systematic-debugging
+1. Load skill: skills/systematic-debugging
 2. Read overview (10 sec) - reminded of mandate
 3. Follow Phase 1 checklist - forced investigation
 4. If tempted to skip - see anti-pattern, stop

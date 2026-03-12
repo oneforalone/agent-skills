@@ -10,3 +10,4 @@
   - Added `skills/systematic-debugging/` from `obra/superpowers`.
   - Updated `README.md` to document the imported debugging skills.
   - Renamed review orchestration skills to use the `*-review` suffix consistently.
+  - Fixed review findings by making `pua-debugging` opt-in, restoring root `.agent/` scaffolding, and sanitizing imported skill references.

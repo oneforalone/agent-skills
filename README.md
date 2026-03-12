@@ -10,7 +10,17 @@ This repository includes the core routed review skills plus a small debugging bu
 ## 1. Global setup
 Copy `AGENTS.md` into `~/.codex/AGENTS.md`.
 
-Copy every folder under `skills/` into `~/.codex/skills/`.
+Install the default skill set from `skills/` into `~/.codex/skills/`, but keep `pua-debugging` opt-in because it intentionally changes tone and trigger behavior.
+
+```bash
+rsync -a --exclude 'pua-debugging' skills/ ~/.codex/skills/
+```
+
+If you explicitly want `pua-debugging`, install it separately:
+
+```bash
+cp -R skills/pua-debugging ~/.codex/skills/
+```
 
 ## 2. Repository setup
 Copy `repo-template/AGENT.md` into your repository root as `AGENT.md`.

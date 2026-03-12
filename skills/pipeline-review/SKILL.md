@@ -1,5 +1,5 @@
 ---
-name: review-pipeline
+name: pipeline-review
 description: Orchestrate routed code review: analyze diff, route skills, run mandatory and selected review skills, merge findings, and optionally run consensus. Use this as the default entry point for non-trivial code review.
 ---
 # Review Pipeline
@@ -12,8 +12,8 @@ Workflow:
    - `$red-team-review`
    - `$rollback-safety`
 4. Run only the additional skills selected by `$risk-router`.
-5. Run `$review-merge`.
-6. If reports conflict materially, run `$review-consensus`.
+5. Run `$merge-review`.
+6. If reports conflict materially, run `$consensus-review`.
 7. Return the final report.
 
 Rules:

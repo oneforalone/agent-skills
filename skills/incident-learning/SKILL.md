@@ -16,7 +16,7 @@ Steps:
    - repository `.agent/incident-lessons.md`, and/or
    - affected skill `references/incident-lessons.md`
 5. If the failure pattern does not fit existing skills, propose a new skill.
-6. Recommend a follow-up run of `$review-pipeline` on similar code paths.
+6. Recommend a follow-up run of `$pipeline-review` on similar code paths.
 
 Output format:
 ```md

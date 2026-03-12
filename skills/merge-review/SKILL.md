@@ -1,5 +1,5 @@
 ---
-name: review-merge
+name: merge-review
 description: Merge outputs from multiple review skills into one deduplicated, severity-ranked report. Use this after selected review skills have finished.
 ---
 # Review Merge

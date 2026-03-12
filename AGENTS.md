@@ -54,8 +54,8 @@ For any non-trivial code review:
    - `$red-team-review`
    - `$rollback-safety`
 4. Run any additional review skills selected by `$risk-router`
-5. Run `$review-merge`
-6. If findings conflict or overlap ambiguously, run `$review-consensus`
+5. Run `$merge-review`
+6. If findings conflict or overlap ambiguously, run `$consensus-review`
 
 Do not run all review skills by default unless the change is explicitly high risk.
 

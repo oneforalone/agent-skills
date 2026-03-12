@@ -1,5 +1,5 @@
 ---
-name: review-consensus
+name: consensus-review
 description: Resolve conflicts or ambiguity between multiple review skills and issue a final merge recommendation. Use this when skills disagree about severity or merge readiness.
 ---
 # Review Consensus

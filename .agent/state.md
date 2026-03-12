@@ -8,3 +8,5 @@
   - Added `skills/pua-debugging/SKILL.md` from the provided GitHub source.
   - Added `skills/verification-before-completion/` from `obra/superpowers`.
   - Added `skills/systematic-debugging/` from `obra/superpowers`.
+  - Updated `README.md` to document the imported debugging skills.
+  - Renamed review orchestration skills to use the `*-review` suffix consistently.

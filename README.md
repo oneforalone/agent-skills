@@ -1,5 +1,12 @@
 # Install Guide
 
+## Included skills
+This repository includes the core routed review skills plus a small debugging bundle:
+
+- `pua-debugging`: pushes for exhaustive investigation and stronger end-to-end ownership when work gets stuck.
+- `verification-before-completion`: requires fresh verification evidence before claiming a task is fixed or complete.
+- `systematic-debugging`: enforces root-cause investigation before proposing fixes, with additional supporting reference files.
+
 ## 1. Global setup
 Copy `AGENTS.md` into `~/.codex/AGENTS.md`.
 
@@ -21,7 +28,7 @@ codex --ask-for-approval never "List the skills that are available."
 For non-trivial review, invoke:
 
 ```text
-$review-pipeline
+$pipeline-review
 ```
 
 ## 5. Incident learning

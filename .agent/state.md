@@ -1,7 +1,7 @@
 # State
 
-- Date: 2026-03-12
-- Status: repository initialized and extended with imported skills
+- Date: 2026-03-31
+- Status: repository extended with oversized-file-refactor skill
 - Notes:
   - Added a repository-level `.gitignore` for local OS/editor/cache artifacts.
   - Created the initial repository commit.
@@ -15,3 +15,7 @@
   - Narrowed `python-uv-workflow` so it only applies to uv-based repos or explicit uv standardization requests.
   - Replaced repository-local `AGENT.md` usage with `AGENTS.md` so downstream projects auto-load the copied instructions.
   - Split global and repository-local `AGENTS.md` responsibilities so the root file stays global-only and `repo-template/AGENTS.md` remains the downstream repo template.
+  - Added `skills/oversized-file-refactor/` to enforce a 1200-line source-file threshold by requiring `linus-review` and `pua-debugging` before refactoring oversized files.
+  - Updated `README.md` so `oversized-file-refactor` stays opt-in alongside `pua-debugging` instead of entering the default install path with a missing dependency.
+  - Compressed `skills/oversized-file-refactor/SKILL.md` to reduce token cost while keeping the trigger text and mandatory workflow intact.
+  - Further compressed `skills/oversized-file-refactor/SKILL.md` into an extreme-trigger version with only the threshold and mandatory actions.

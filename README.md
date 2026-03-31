@@ -4,6 +4,7 @@
 This repository includes the core routed review skills plus a small debugging bundle:
 
 - `pua-debugging`: pushes for exhaustive investigation and stronger end-to-end ownership when work gets stuck.
+- `oversized-file-refactor`: enforces a 1200-line ceiling for source files by requiring `linus-review` and `pua-debugging` before refactoring oversized files.
 - `verification-before-completion`: requires fresh verification evidence before claiming a task is fixed or complete.
 - `systematic-debugging`: enforces root-cause investigation before proposing fixes, with additional supporting reference files.
 - `python-uv-workflow`: standardizes `uv`-based Python project work around `uv`, `ruff`, and `ty`.
@@ -11,16 +12,22 @@ This repository includes the core routed review skills plus a small debugging bu
 ## 1. Global setup
 Copy the repository-root `AGENTS.md` into `~/.codex/AGENTS.md`.
 
-Install the default skill set from `skills/` into `~/.codex/skills/`, but keep `pua-debugging` opt-in because it intentionally changes tone and trigger behavior.
+Install the default skill set from `skills/` into `~/.codex/skills/`, but keep `pua-debugging` and `oversized-file-refactor` opt-in because the refactor skill explicitly depends on `pua-debugging` and inherits its stronger tone and workflow.
 
 ```bash
-rsync -a --exclude 'pua-debugging' skills/ ~/.codex/skills/
+rsync -a --exclude 'pua-debugging' --exclude 'oversized-file-refactor' skills/ ~/.codex/skills/
 ```
 
 If you explicitly want `pua-debugging`, install it separately:
 
 ```bash
 cp -R skills/pua-debugging ~/.codex/skills/
+```
+
+If you also want the 1200-line oversized-file rule, install the companion skill after `pua-debugging`:
+
+```bash
+cp -R skills/oversized-file-refactor ~/.codex/skills/
 ```
 
 ## 2. Repository setup

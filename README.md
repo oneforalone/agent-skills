@@ -1,13 +1,14 @@
 # Install Guide
 
 ## Included skills
-This repository includes the core routed review skills plus a small debugging bundle:
+This repository includes the core routed review skills, a small debugging bundle, and project convention skills:
 
 - `pua-debugging`: pushes for exhaustive investigation and stronger end-to-end ownership when work gets stuck.
 - `oversized-file-refactor`: enforces a 1200-line ceiling for source files by requiring `linus-review` and `pua-debugging` before refactoring oversized files.
 - `verification-before-completion`: requires fresh verification evidence before claiming a task is fixed or complete.
 - `systematic-debugging`: enforces root-cause investigation before proposing fixes, with additional supporting reference files.
 - `python-uv-workflow`: standardizes `uv`-based Python project work around `uv`, `ruff`, and `ty`.
+- `project-naming-rules`: enforces concise kebab-case naming for docs/API/URLs and snake_case naming for code, DB fields, and source files.
 
 ## 1. Global setup
 Copy the repository-root `AGENTS.md` into `~/.codex/AGENTS.md`.

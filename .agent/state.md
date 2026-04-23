@@ -1,7 +1,7 @@
 # State
 
-- Date: 2026-03-31
-- Status: repository extended with oversized-file-refactor skill
+- Date: 2026-04-23
+- Status: repository extended with project-naming-rules skill
 - Notes:
   - Added a repository-level `.gitignore` for local OS/editor/cache artifacts.
   - Created the initial repository commit.
@@ -19,3 +19,9 @@
   - Updated `README.md` so `oversized-file-refactor` stays opt-in alongside `pua-debugging` instead of entering the default install path with a missing dependency.
   - Compressed `skills/oversized-file-refactor/SKILL.md` to reduce token cost while keeping the trigger text and mandatory workflow intact.
   - Further compressed `skills/oversized-file-refactor/SKILL.md` into an extreme-trigger version with only the threshold and mandatory actions.
+  - Added `skills/project-naming-rules/` to enforce concise kebab-case names for docs/API/URLs and snake_case names for code, database fields, and source files.
+  - Added `transaction`/`transactions` -> `tx`/`txs` to the `project-naming-rules` abbreviation list.
+  - Added before/after examples covering docs/API/URL names, code/database/source filenames, and separator-only differences between `kebab-case` and `snake_case`.
+  - Added computer, network, and finance abbreviation examples, including the surface-specific rule that `portfolio` may become `pf` in code identifiers but stays `portfolio` in file names, API/URL paths, and database fields.
+  - Standardized the finance account abbreviation on `acc` instead of `acct`, with a context guard for ambiguous `acc` meanings.
+  - Installed `project-naming-rules` into `/Users/yuki/.codex/skills/project-naming-rules`.

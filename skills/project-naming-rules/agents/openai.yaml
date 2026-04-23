@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Naming Rules"
+  short_description: "Consistent concise names across docs, APIs, URLs, and code."
+  default_prompt: "Use $project-naming-rules to review and normalize names in this project."
